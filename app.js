@@ -7,6 +7,8 @@ const weatherLoad = () => {
     fetch(url)
         .then(response => response.json())
         .then(data => displayData(data))
+
+    document.getElementById('input').value = '';
 }
 
 const innerText = (id, text) => {
